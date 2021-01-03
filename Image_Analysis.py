@@ -1,7 +1,7 @@
-# USAGE
-# tkinter_test.py
+## USAGE
+## tkinter_test.py
 
-# import the necessary packages
+## import the necessary packages
 from Tkinter import *
 import numpy as np
 from PIL import Image
@@ -21,8 +21,8 @@ def canny():
 
 	# ensure a file path was selected
 	if len(path) > 0:
-		# load the image from disk, convert it to grayscale, and detect
-		# edges in it
+		## load the image from disk, convert it to grayscale, and detect
+		## edges in it
 		image = cv2.imread(path)
 
 		gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -30,11 +30,11 @@ def canny():
 		image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
 
-		# convert the images to PIL format...
+		## convert the images to PIL format...
 		image = Image.fromarray(image)
 		edged = Image.fromarray(edged)
 
-		# ...and then to ImageTk format
+		## ...and then to ImageTk format
 		image = ImageTk.PhotoImage(image)
 		edged = ImageTk.PhotoImage(edged)
 
@@ -51,7 +51,7 @@ def canny():
 			panelB.image = edged
 			panelB.pack(side="right", padx=10, pady=10)
 
-		# otherwise, update the image panels
+		## otherwise, update the image panels
 		else:
 			# update the pannels
 			panelA.configure(image=image)
@@ -62,8 +62,8 @@ def canny():
 
 
 
-		# OpenCV represents images in BGR order; however PIL represents
-		# images in RGB order, so we need to swap the channels
+		## OpenCV represents images in BGR order; however PIL represents
+		## images in RGB order, so we need to swap the channels
 
 
 def count_object():
