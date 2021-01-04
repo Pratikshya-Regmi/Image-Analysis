@@ -1,5 +1,5 @@
-## USAGE
-## tkinter_test.py
+# USAGE
+# tkinter_test.py
 
 ## import the necessary packages
 from Tkinter import *
