@@ -242,5 +242,5 @@ my_image=cv2.imread('040E68C1000003E8-0-image-m-58_1502711246235.jpg')
 root.configure(background='#a1dbcd')
 
 
-# kick off the GUI
+#kick off the GUI
 root.mainloop()
